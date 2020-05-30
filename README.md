@@ -1,6 +1,6 @@
 # COM3D2.VyperCam.Plugin
 
-![GitHub Logo](https://imgur.com/nnxqkYm.png)
+![Logo](https://imgur.com/nnxqkYm.png)
 
 A plugin dedicated to see a webcam inside COM3D2 VR Mode. Useful to check your room's door for your lewd needs :3
 
