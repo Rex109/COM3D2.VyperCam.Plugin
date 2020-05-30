@@ -60,7 +60,7 @@ namespace COM3D2.VyperCam.Plugin
             }
             catch (Exception e)
             {
-                Console.WriteLine("[VyperCam] There was an error during the configuration loading :" +  e.ToString());
+                Console.WriteLine("[VyperCam] There was an error during the configuration loading: " +  e.ToString());
             }
         }
 
