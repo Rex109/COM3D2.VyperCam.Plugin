@@ -23,6 +23,8 @@ namespace COM3D2.VyperCam.Plugin
         private int webcamid = 0;
         private float camsizex = 500f;
         private float camsizey = 500f;
+        private float camoffsetx = 0f;
+        private float camoffsety = 0f;
 
         private bool vr;
 
@@ -57,10 +59,16 @@ namespace COM3D2.VyperCam.Plugin
                 IniKey key = Preferences["Config"]["ToggleKey"];
                 IniKey id = Preferences["Config"]["WebcamID"];
                 IniKey sizex = Preferences["Config"]["WebcamSizeX"];
-                IniKey sizey = Preferences["Config"]["WebcamSizeX"];
+                IniKey sizey = Preferences["Config"]["WebcamSizeY"];
+                IniKey offsetx = Preferences["Config"]["WebcamOffsetX"];
+                IniKey offsety = Preferences["Config"]["WebcamOffsetY"];
 
                 camsizex = float.Parse(sizex.Value);
                 camsizey = float.Parse(sizey.Value);
+
+                camoffsetx = float.Parse(offsetx.Value);
+                camoffsety = float.Parse(offsety.Value);
+
 
                 togglekey = (KeyCode)Enum.Parse(typeof(KeyCode), key.Value, true);
                 webcamid = int.Parse(id.Value);
@@ -68,7 +76,7 @@ namespace COM3D2.VyperCam.Plugin
             }
             catch (Exception e)
             {
-                Console.WriteLine("[VyperCam] There was an error during the configuration loading: " +  e.ToString());
+                Console.WriteLine("[VyperCam] There was an error during the configuration loading, default configuration loaded. Error details: " +  e.ToString());
             }
         }
 
@@ -97,7 +105,7 @@ namespace COM3D2.VyperCam.Plugin
                     var rect = panel.GetComponent<RectTransform>();
                     rect.sizeDelta = new Vector2(camsizex, camsizey);
                     rect.pivot = new Vector2(1, 0);
-                    rect.localPosition = new Vector2(960, -540);
+                    rect.localPosition = new Vector2(960 + camoffsetx, -540 + camoffsety);
 
                     var image = panel.AddComponent<RawImage>();
                     image.transform.SetParent(panel.transform, false);
