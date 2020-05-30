@@ -1,9 +1,11 @@
 # COM3D2.VyperCam.Plugin
 
+![GitHub Logo](https://imgur.com/nnxqkYm.png)
+
 A plugin dedicated to see a webcam inside COM3D2 VR Mode. Useful to check your room's door for your lewd needs :3
 
 # Features
-- Using unity built-in "WebcamTetxure"
-  - Reaaaaaaaaally lightweight
+- Using unity built-in "WebcamTexture"
+  - Reeeeaaaaally lightweight
 - Selectable camera through ini
 - Enable/Disable button
