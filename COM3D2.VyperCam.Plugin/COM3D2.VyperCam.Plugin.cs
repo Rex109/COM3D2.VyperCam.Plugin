@@ -19,8 +19,10 @@ namespace COM3D2.VyperCam.Plugin
 
         private GameObject panel;
 
-        KeyCode togglekey = KeyCode.F6;
+        private KeyCode togglekey = KeyCode.F6;
         private int webcamid = 0;
+        private float camsizex = 500f;
+        private float camsizey = 500f;
 
         private bool vr;
 
@@ -53,6 +55,11 @@ namespace COM3D2.VyperCam.Plugin
             {
                 IniKey key = Preferences["Config"]["ToggleKey"];
                 IniKey id = Preferences["Config"]["WebcamID"];
+                IniKey sizex = Preferences["Config"]["WebcamSizeX"];
+                IniKey sizey = Preferences["Config"]["WebcamSizeX"];
+
+                camsizex = float.Parse(sizex.Value);
+                camsizey = float.Parse(sizey.Value);
 
                 togglekey = (KeyCode)Enum.Parse(typeof(KeyCode), key.Value, true);
                 webcamid = int.Parse(id.Value);
@@ -87,7 +94,7 @@ namespace COM3D2.VyperCam.Plugin
                     canvas.renderMode = RenderMode.WorldSpace;
 
                     var rect = panel.GetComponent<RectTransform>();
-                    rect.sizeDelta = new Vector2(500f, 500f);
+                    rect.sizeDelta = new Vector2(camsizex, camsizey);
                     rect.pivot = new Vector2(1, 0);
                     rect.localPosition = new Vector2(960, -540);
 
