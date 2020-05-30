@@ -28,7 +28,6 @@ namespace COM3D2.VyperCam.Plugin
 
         public void Start()
         {
-            LoadConfig();
             SceneManager.sceneLoaded += OnLevelFinishedLoading;
 
             vr = Environment.GetCommandLineArgs().Any(s => s.ToLower().Contains("/vr"));
@@ -39,6 +38,8 @@ namespace COM3D2.VyperCam.Plugin
             }
             else
             {
+                LoadConfig();
+
                 if (devices.Length > 0)
                 {
                     webcamTex = new WebCamTexture(WebCamTexture.devices[webcamid].name);
