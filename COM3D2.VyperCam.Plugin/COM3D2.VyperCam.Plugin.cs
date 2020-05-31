@@ -72,6 +72,7 @@ namespace COM3D2.VyperCam.Plugin
 
                 togglekey = (KeyCode)Enum.Parse(typeof(KeyCode), key.Value, true);
                 webcamid = int.Parse(id.Value);
+
                 Console.WriteLine("[VyperCam] Configuration loaded correctly!");
             }
             catch (Exception e)
