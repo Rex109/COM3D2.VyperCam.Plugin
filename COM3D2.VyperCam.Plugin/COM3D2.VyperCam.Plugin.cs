@@ -9,7 +9,7 @@ using System.Linq;
 
 namespace COM3D2.VyperCam.Plugin
 {
-    [PluginFilter("COM3D2x64"), PluginFilter("COM3D2VRx64"), PluginFilter("COM3D2OHx64"), PluginFilter("COM3D2OHVRx64"), PluginName("VyperCam"), PluginVersion("1.0.0.0")]
+    [PluginFilter("COM3D2x64"), PluginFilter("COM3D2VRx64"), PluginFilter("COM3D2OHx64"), PluginFilter("COM3D2OHVRx64"), PluginName("VyperCam"), PluginVersion("1.1.0.0")]
     public class VyperCam : PluginBase
     {
         private WebCamDevice[] devices = WebCamTexture.devices;
