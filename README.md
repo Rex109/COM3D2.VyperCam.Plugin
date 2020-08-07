@@ -6,6 +6,6 @@ A plugin dedicated to see a webcam inside COM3D2 VR Mode. Useful to check your r
 
 # Features
 - Using unity built-in "WebcamTexture"
-  - Reeeeaaaaally lightweight
+  - Lightweight
 - Selectable camera through ini
 - Enable/Disable button
