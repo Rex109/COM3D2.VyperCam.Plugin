@@ -9,3 +9,6 @@ A plugin dedicated to see a webcam inside COM3D2 VR Mode. Useful to check your r
   - Lightweight
 - Selectable camera through ini
 - Enable/Disable button
+
+# Pre-compiled DLL
+To download the pre-compiled dll you can grab the latest version in the [Releases Page](https://github.com/Rex109/COM3D2.VyperCam.Plugin/releases/)
