@@ -26,7 +26,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>D:\KISS\COM3D2\Sybaris\UnityInjector\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -44,6 +44,7 @@
     <Reference Include="ExIni">
       <HintPath>D:\KISS\COM3D2\Sybaris\ExIni.dll</HintPath>
     </Reference>
+    <Reference Include="System" />
     <Reference Include="UnityEngine">
       <HintPath>D:\KISS\COM3D2\COM3D2x64_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
