@@ -34,7 +34,6 @@ namespace COM3D2.VyperCam.Plugin
 
         private bool vr;
 
-        private Stream stream;
         private RawImage ImageRect;
 
         public void Start()
