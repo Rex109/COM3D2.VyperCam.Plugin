@@ -17,3 +17,6 @@ To download the pre-compiled dll you can grab the latest version in the [Release
 To configure an ip camera with VyperCam you will need its JPEG screenshot URL. This is usually the local ip address of the webcam and some GET variables defined by the webcam's vendor, the most common variable is ?action=snapshot. In addition if you set a user/password combination on your camera you will need to include them in the URL.
 
 Example: http://user:password@192.168.1.127/cam/feed.cgi?action=snapshot
+
+# Issues
+If you ever find an issue or a bug please submit it in the [Issues Page](https://github.com/Rex109/COM3D2.VyperCam.Plugin/issues)
